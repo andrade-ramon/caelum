@@ -13,14 +13,22 @@
 <script src="js/jquery-ui.js"></script>
 </head>
 <body>
-<h1>Adiciona Contatos</h1>
-<hr/>
-<form action="adicionaContato">
-	Nome:<input type="text" name="nome"/><br/>
-	E-mail:<input type="text" name="email"/><br/>
-	Endereço:<input type="text" name="endereco"/><br/>
-	Data Nascimento:<caelum:campoData id="dataNascimento" /><br/>
-	<input type="submit" value="Gravar"/>
-</form>
+	<c:import url="cabecalho.jsp" />
+	
+	<form action="adicionaContato">
+		<c:if test="${not empty contato.id }">
+			<input type="hidden" name="id" value="${contato.id }" />
+		</c:if>
+		
+		Nome:<input type="text" name="nome" value="${contato.nome }"/><br/>
+		E-mail:<input type="text" name="email" value="${contato.email}"/><br/>
+		Endereço:<input type="text" name="endereco" value="${contato.endereco }"/><br/>
+		
+		<fmt:formatDate value="${contato.dataNascimento.time }" pattern="dd/MM/yyyy" var="data" />
+		Data Nascimento:<caelum:campoData id="dataNascimento" data="${data }"/><br/>
+		<input type="submit" value="Gravar"/>
+	</form>
+	
+	<c:import url="rodape.jsp" />
 </body>
 </html>

@@ -43,7 +43,7 @@ public class ContatoDao {
 			throw new RuntimeException(e);
 		}
 	}
-
+	
 	public List<Contato> getLista() {
 		try {
 			List<Contato> contatos = new ArrayList<Contato>();
@@ -99,6 +99,29 @@ public class ContatoDao {
 			stmt.setLong(5, contato.getId());
 
 			stmt.execute();
+		} catch (SQLException e) {
+			throw new RuntimeException(e);
+		}
+	}
+	
+	public Contato buscaContato(Long id){
+		String sql = "select * from contatos where id = ?";
+		try {
+			PreparedStatement stmt = this.connection.prepareStatement(sql);
+			stmt.setLong(1, id);
+	
+			ResultSet rs = stmt.executeQuery();
+			Contato c = new Contato();
+			rs.next();
+			c.setId(rs.getLong("id"));
+			c.setNome(rs.getString("nome"));
+			c.setEmail(rs.getString("email"));
+			c.setEndereco(rs.getString("endereco"));
+			
+			Calendar data = Calendar.getInstance();
+			data.setTime(rs.getDate("dataNascimento"));
+			c.setDataNascimento(data);
+			return c;
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
 		}
