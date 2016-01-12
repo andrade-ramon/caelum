@@ -1,4 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib tagdir="/WEB-INF/tags" prefix="caelum"%>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -15,7 +16,7 @@
 <body>
 	<c:import url="cabecalho.jsp" />
 	
-	<form action="adicionaContato">
+	<form action="mvc?logica=SalvaContatoLogic" method="POST">
 		<c:if test="${not empty contato.id }">
 			<input type="hidden" name="id" value="${contato.id }" />
 		</c:if>

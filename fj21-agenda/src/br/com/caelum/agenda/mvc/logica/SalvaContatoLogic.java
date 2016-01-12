@@ -1,5 +1,6 @@
 package br.com.caelum.agenda.mvc.logica;
 
+import java.sql.Connection;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -35,8 +36,8 @@ public class SalvaContatoLogic implements Logica {
 		} catch (ParseException e) {
 			throw new RuntimeException(e);
 		}
-
-		ContatoDao dao = new ContatoDao();
+		Connection con = (Connection) req.getAttribute("connection");
+		ContatoDao dao = new ContatoDao(con);
 		if (contato.getId() == null) {
 			dao.adiciona(contato);
 		} else {
