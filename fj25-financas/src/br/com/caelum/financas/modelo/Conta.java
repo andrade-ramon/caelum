@@ -20,6 +20,10 @@ public class Conta {
 		return id;
 	}
 
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
 	public String getTitular() {
 		return titular;
 	}

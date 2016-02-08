@@ -4,6 +4,7 @@ import javax.persistence.EntityManager;
 
 import br.com.caelum.financas.dao.ContaDao;
 import br.com.caelum.financas.modelo.Conta;
+import br.com.caelum.financas.util.JPAUtil;
 
 public class TestePesquisaIdConta {
 	public static void main(String[] args) {

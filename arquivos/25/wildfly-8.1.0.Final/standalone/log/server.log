@@ -1,0 +1,323 @@
+2014-09-11 15:34:17,571 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2014-09-11 15:34:18,405 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2014-09-11 15:34:18,606 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.1.0.Final "Kenny" starting
+2014-09-11 15:34:18,614 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.lwawt.macosx.LWCToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	gopherProxySet = false
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	java.awt.graphicsenv = sun.awt.CGraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.lwawt.macosx.CPrinterJob
+	java.class.path = /Users/mario/dev/servers/wildfly-8.1.0.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/endorsed
+	java.ext.dirs = /Users/mario/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+	java.home = /Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre
+	java.io.tmpdir = /var/folders/rr/q5htggg93wb8ccmdvz6yv7580000gn/T/
+	java.library.path = /Users/mario/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_05-b13
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_05
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.5-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.home.dir = /Users/mario/dev/servers/wildfly-8.1.0.Final
+	jboss.host.name = marios-macbook-pro
+	jboss.modules.dir = /Users/mario/dev/servers/wildfly-8.1.0.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = marios-macbook-pro
+	jboss.qualified.host.name = marios-macbook-pro.local
+	jboss.server.base.dir = /Users/mario/dev/servers/wildfly-8.1.0.Final/standalone
+	jboss.server.config.dir = /Users/mario/dev/servers/wildfly-8.1.0.Final/standalone/configuration
+	jboss.server.data.dir = /Users/mario/dev/servers/wildfly-8.1.0.Final/standalone/data
+	jboss.server.deploy.dir = /Users/mario/dev/servers/wildfly-8.1.0.Final/standalone/data/content
+	jboss.server.log.dir = /Users/mario/dev/servers/wildfly-8.1.0.Final/standalone/log
+	jboss.server.name = marios-macbook-pro
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/mario/dev/servers/wildfly-8.1.0.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/Users/mario/dev/servers/wildfly-8.1.0.Final/standalone/configuration/logging.properties
+	module.path = /Users/mario/dev/servers/wildfly-8.1.0.Final/modules
+	org.jboss.boot.log.file = /Users/mario/dev/servers/wildfly-8.1.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 10.9.4
+	path.separator = :
+	program.name = JBossTools: WildFly 8.1 HA
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	sun.arch.data.model = 64
+	sun.boot.class.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = org.jboss.modules.Main -mp /Users/mario/dev/servers/wildfly-8.1.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone-ha.xml -Djboss.server.base.dir=/Users/mario/dev/servers/wildfly-8.1.0.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.country.format = BR
+	user.dir = /Users/mario/dev/servers/wildfly-8.1.0.Final/bin
+	user.home = /Users/mario
+	user.language = en
+	user.name = mario
+	user.timezone = America/Sao_Paulo
+2014-09-11 15:34:18,615 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.1 HA -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/Users/mario/dev/servers/wildfly-8.1.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/Users/mario/dev/servers/wildfly-8.1.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=/Users/mario/dev/servers/wildfly-8.1.0.Final -Dorg.jboss.logmanager.nocolor=true -Dfile.encoding=UTF-8 
+2014-09-11 15:34:22,055 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found fj25-web-wildfly.war in deployment directory. To trigger deployment create a file called fj25-web-wildfly.war.dodeploy
+2014-09-11 15:34:22,093 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2014-09-11 15:34:22,148 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.2.2.Final
+2014-09-11 15:34:22,163 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.2.2.Final
+2014-09-11 15:34:22,193 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 38) JBAS010260: Activating JGroups subsystem.
+2014-09-11 15:34:22,189 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 49) JBAS013171: Activating Security Subsystem
+2014-09-11 15:34:22,191 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 50) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2014-09-11 15:34:22,208 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 34) JBAS010280: Activating Infinispan subsystem.
+2014-09-11 15:34:22,224 INFO  [org.jboss.as.security] (MSC service thread 1-2) JBAS013170: Current PicketBox version=4.0.21.Beta1
+2014-09-11 15:34:22,235 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 52) JBAS015537: Activating WebServices Extension
+2014-09-11 15:34:22,241 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 41) JBAS012615: Activated the following JSF Implementations: [main]
+2014-09-11 15:34:22,246 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 44) JBAS011800: Activating Naming Subsystem
+2014-09-11 15:34:22,308 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 33) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2014-09-11 15:34:22,425 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017502: Undertow 1.0.15.Final starting
+2014-09-11 15:34:22,425 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 51) JBAS017502: Undertow 1.0.15.Final starting
+2014-09-11 15:34:22,435 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-5) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.5.Final)
+2014-09-11 15:34:22,628 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 29) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2014-09-11 15:34:22,668 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) JBAS010417: Started Driver service with driver-name = h2
+2014-09-11 15:34:22,876 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 29) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2014-09-11 15:34:22,885 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) JBAS010417: Started Driver service with driver-name = com.mysql
+2014-09-11 15:34:22,886 INFO  [org.jboss.as.naming] (MSC service thread 1-7) JBAS011802: Starting Naming Service
+2014-09-11 15:34:22,889 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2014-09-11 15:34:22,969 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 4.0.3.Final
+2014-09-11 15:34:23,116 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 51) JBAS017527: Creating file handler for path /Users/mario/dev/servers/wildfly-8.1.0.Final/welcome-content
+2014-09-11 15:34:23,173 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017525: Started server default-server.
+2014-09-11 15:34:23,212 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017531: Host default-host starting
+2014-09-11 15:34:23,321 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017519: Undertow AJP listener ajp listening on localhost/127.0.0.1:8009
+2014-09-11 15:34:23,322 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
+2014-09-11 15:34:23,356 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 54) MODCLUSTER000001: Initializing mod_cluster version 1.3.0.Final
+2014-09-11 15:34:23,399 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 54) MODCLUSTER000032: Listening to proxy advertisements on /224.0.1.105:23364
+2014-09-11 15:34:24,339 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2014-09-11 15:34:24,352 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010400: Bound data source [java:/fj25DS]
+2014-09-11 15:34:24,455 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) JBAS015012: Started FileSystemDeploymentService for directory /Users/mario/dev/servers/wildfly-8.1.0.Final/standalone/deployments
+2014-09-11 15:34:24,524 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015876: Starting deployment of "fj25-web-wildfly.war" (runtime-name: "fj25-web-wildfly.war")
+2014-09-11 15:34:25,181 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.2.4.Final
+2014-09-11 15:34:25,458 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) JBAS011401: Read persistence.xml for financas
+2014-09-11 15:34:25,646 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-5) JBAS018567: Deployment "deployment.fj25-web-wildfly.war" is using a private module ("org.apache.lucene:main") which may be changed or removed in future versions without notice.
+2014-09-11 15:34:26,249 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 55) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'fj25-web-wildfly.war#financas'
+2014-09-11 15:34:26,279 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 55) HHH000204: Processing PersistenceUnitInfo [
+	name: financas
+	...]
+2014-09-11 15:34:26,477 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 55) HHH000412: Hibernate Core {4.3.5.Final}
+2014-09-11 15:34:26,481 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 55) HHH000206: hibernate.properties not found
+2014-09-11 15:34:26,494 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 55) HHH000021: Bytecode provider name : javassist
+2014-09-11 15:34:26,912 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) JBAS016002: Processing weld deployment fj25-web-wildfly.war
+2014-09-11 15:34:27,133 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 5.1.0.Final
+2014-09-11 15:34:27,562 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named PopulaBanco in deployment unit deployment "fj25-web-wildfly.war" are as follows:
+
+	java:global/fj25-web-wildfly/PopulaBanco!br.com.caelum.financas.util.PopulaBanco
+	java:app/fj25-web-wildfly/PopulaBanco!br.com.caelum.financas.util.PopulaBanco
+	java:module/PopulaBanco!br.com.caelum.financas.util.PopulaBanco
+	java:global/fj25-web-wildfly/PopulaBanco
+	java:app/fj25-web-wildfly/PopulaBanco
+	java:module/PopulaBanco
+
+2014-09-11 15:34:27,563 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named ContaDao in deployment unit deployment "fj25-web-wildfly.war" are as follows:
+
+	java:global/fj25-web-wildfly/ContaDao!br.com.caelum.financas.dao.ContaDao
+	java:app/fj25-web-wildfly/ContaDao!br.com.caelum.financas.dao.ContaDao
+	java:module/ContaDao!br.com.caelum.financas.dao.ContaDao
+	java:global/fj25-web-wildfly/ContaDao
+	java:app/fj25-web-wildfly/ContaDao
+	java:module/ContaDao
+
+2014-09-11 15:34:27,563 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named MovimentacaoDao in deployment unit deployment "fj25-web-wildfly.war" are as follows:
+
+	java:global/fj25-web-wildfly/MovimentacaoDao!br.com.caelum.financas.dao.MovimentacaoDao
+	java:app/fj25-web-wildfly/MovimentacaoDao!br.com.caelum.financas.dao.MovimentacaoDao
+	java:module/MovimentacaoDao!br.com.caelum.financas.dao.MovimentacaoDao
+	java:global/fj25-web-wildfly/MovimentacaoDao
+	java:app/fj25-web-wildfly/MovimentacaoDao
+	java:module/MovimentacaoDao
+
+2014-09-11 15:34:27,563 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named Agendador in deployment unit deployment "fj25-web-wildfly.war" are as follows:
+
+	java:global/fj25-web-wildfly/Agendador!br.com.caelum.financas.service.Agendador
+	java:app/fj25-web-wildfly/Agendador!br.com.caelum.financas.service.Agendador
+	java:module/Agendador!br.com.caelum.financas.service.Agendador
+	java:global/fj25-web-wildfly/Agendador
+	java:app/fj25-web-wildfly/Agendador
+	java:module/Agendador
+
+2014-09-11 15:34:27,564 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named EstatisticasBean in deployment unit deployment "fj25-web-wildfly.war" are as follows:
+
+	java:global/fj25-web-wildfly/EstatisticasBean!br.com.caelum.financas.mb.EstatisticasBean
+	java:app/fj25-web-wildfly/EstatisticasBean!br.com.caelum.financas.mb.EstatisticasBean
+	java:module/EstatisticasBean!br.com.caelum.financas.mb.EstatisticasBean
+	java:global/fj25-web-wildfly/EstatisticasBean
+	java:app/fj25-web-wildfly/EstatisticasBean
+	java:module/EstatisticasBean
+
+2014-09-11 15:34:27,998 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) JBAS016005: Starting Services for CDI deployment: fj25-web-wildfly.war
+2014-09-11 15:34:28,112 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 56) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2014-09-11 15:34:28,142 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 56) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2014-09-11 15:34:28,170 INFO  [org.jboss.weld.Version] (MSC service thread 1-5) WELD-000900: 2.1.2 (Final)
+2014-09-11 15:34:28,317 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) JBAS016008: Starting weld service for deployment fj25-web-wildfly.war
+2014-09-11 15:34:28,458 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (ServerService Thread Pool -- 55) ISPN000078: Starting JGroups Channel
+2014-09-11 15:34:28,530 WARN  [org.jgroups.protocols.UDP] (ServerService Thread Pool -- 55) JGRP000015: the receive buffer of socket DatagramSocket was set to 20MB, but the OS only allocated 5.03MB. This might lead to performance problems. Please set your max receive buffer in the OS correctly (e.g. net.core.rmem_max on Linux)
+2014-09-11 15:34:28,532 WARN  [org.jgroups.protocols.UDP] (ServerService Thread Pool -- 55) JGRP000015: the receive buffer of socket MulticastSocket was set to 25MB, but the OS only allocated 5.03MB. This might lead to performance problems. Please set your max receive buffer in the OS correctly (e.g. net.core.rmem_max on Linux)
+2014-09-11 15:34:28,546 INFO  [stdout] (ServerService Thread Pool -- 55) 
+2014-09-11 15:34:28,546 INFO  [stdout] (ServerService Thread Pool -- 55) -------------------------------------------------------------------
+2014-09-11 15:34:28,546 INFO  [stdout] (ServerService Thread Pool -- 55) GMS: address=marios-macbook-pro/ejb, cluster=ejb, physical address=127.0.0.1:55200
+2014-09-11 15:34:28,546 INFO  [stdout] (ServerService Thread Pool -- 55) -------------------------------------------------------------------
+2014-09-11 15:34:28,822 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 56) JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'fj25-web-wildfly.war#financas'
+2014-09-11 15:34:28,983 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 56) HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-09-11 15:34:29,114 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 56) HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2014-09-11 15:34:29,381 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 56) HHH000397: Using ASTQueryTranslatorFactory
+2014-09-11 15:34:29,416 INFO  [org.hibernate.cache.spi.UpdateTimestampsCache] (ServerService Thread Pool -- 56) HHH000250: Starting update timestamps cache at region: fj25-web-wildfly.war#financas.org.hibernate.cache.spi.UpdateTimestampsCache
+2014-09-11 15:34:29,419 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (ServerService Thread Pool -- 56) ISPN000078: Starting JGroups Channel
+2014-09-11 15:34:29,421 INFO  [stdout] (ServerService Thread Pool -- 56) 
+2014-09-11 15:34:29,422 INFO  [stdout] (ServerService Thread Pool -- 56) -------------------------------------------------------------------
+2014-09-11 15:34:29,422 INFO  [stdout] (ServerService Thread Pool -- 56) GMS: address=marios-macbook-pro/hibernate, cluster=hibernate, physical address=127.0.0.1:55200
+2014-09-11 15:34:29,422 INFO  [stdout] (ServerService Thread Pool -- 56) -------------------------------------------------------------------
+2014-09-11 15:34:30,588 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (ServerService Thread Pool -- 55) ISPN000094: Received new cluster view: [marios-macbook-pro/ejb|0] (1) [marios-macbook-pro/ejb]
+2014-09-11 15:34:30,590 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (ServerService Thread Pool -- 55) ISPN000079: Cache local address is marios-macbook-pro/ejb, physical addresses are [127.0.0.1:55200]
+2014-09-11 15:34:30,593 INFO  [org.infinispan.factories.GlobalComponentRegistry] (ServerService Thread Pool -- 55) ISPN000128: Infinispan version: Infinispan 'Infinium' 6.0.2.Final
+2014-09-11 15:34:30,876 INFO  [org.infinispan.jmx.CacheJmxRegistration] (ServerService Thread Pool -- 55) ISPN000031: MBeans were successfully registered to the platform MBean server.
+2014-09-11 15:34:30,897 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 55) JBAS010281: Started dist cache from ejb container
+2014-09-11 15:34:31,425 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (ServerService Thread Pool -- 56) ISPN000094: Received new cluster view: [marios-macbook-pro/hibernate|0] (1) [marios-macbook-pro/hibernate]
+2014-09-11 15:34:31,426 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (ServerService Thread Pool -- 56) ISPN000079: Cache local address is marios-macbook-pro/hibernate, physical addresses are [127.0.0.1:55200]
+2014-09-11 15:34:31,454 INFO  [org.infinispan.jmx.CacheJmxRegistration] (ServerService Thread Pool -- 56) ISPN000031: MBeans were successfully registered to the platform MBean server.
+2014-09-11 15:34:31,458 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 56) JBAS010281: Started fj25-web-wildfly.war#financas.org.hibernate.cache.spi.UpdateTimestampsCache cache from hibernate container
+2014-09-11 15:34:31,463 INFO  [org.hibernate.cache.internal.StandardQueryCache] (ServerService Thread Pool -- 56) HHH000248: Starting query cache at region: fj25-web-wildfly.war#financas.org.hibernate.cache.internal.StandardQueryCache
+2014-09-11 15:34:31,473 INFO  [org.infinispan.jmx.CacheJmxRegistration] (ServerService Thread Pool -- 56) ISPN000031: MBeans were successfully registered to the platform MBean server.
+2014-09-11 15:34:31,473 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 56) JBAS010281: Started fj25-web-wildfly.war#financas.org.hibernate.cache.internal.StandardQueryCache cache from hibernate container
+2014-09-11 15:34:31,822 INFO  [org.hibernate.search.Version] (ServerService Thread Pool -- 56) HSEARCH000034: Hibernate Search 4.5.1.Final
+2014-09-11 15:34:31,949 INFO  [org.infinispan.jmx.CacheJmxRegistration] (ServerService Thread Pool -- 56) ISPN000031: MBeans were successfully registered to the platform MBean server.
+2014-09-11 15:34:31,950 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 56) JBAS010281: Started fj25-web-wildfly.war#financas.br.com.caelum.financas.modelo.Conta cache from hibernate container
+2014-09-11 15:34:31,957 INFO  [org.infinispan.jmx.CacheJmxRegistration] (ServerService Thread Pool -- 56) ISPN000031: MBeans were successfully registered to the platform MBean server.
+2014-09-11 15:34:31,957 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 56) JBAS010281: Started pending-puts cache from hibernate container
+2014-09-11 15:34:31,994 INFO  [org.infinispan.jmx.CacheJmxRegistration] (ServerService Thread Pool -- 56) ISPN000031: MBeans were successfully registered to the platform MBean server.
+2014-09-11 15:34:31,995 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 56) JBAS010281: Started fj25-web-wildfly.war#financas.br.com.caelum.financas.modelo.Movimentacao cache from hibernate container
+2014-09-11 15:34:32,024 INFO  [org.infinispan.jmx.CacheJmxRegistration] (ServerService Thread Pool -- 56) ISPN000031: MBeans were successfully registered to the platform MBean server.
+2014-09-11 15:34:32,031 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 56) JBAS010281: Started fj25-web-wildfly.war#financas.br.com.caelum.financas.modelo.Conta.movimentacoes cache from hibernate container
+2014-09-11 15:34:32,174 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 56) HHH000228: Running hbm2ddl schema update
+2014-09-11 15:34:32,174 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 56) HHH000102: Fetching database metadata
+2014-09-11 15:34:32,183 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 56) HHH000396: Updating schema
+2014-09-11 15:34:32,314 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000261: Table found: fj25.Categoria
+2014-09-11 15:34:32,315 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000037: Columns: [nome, id]
+2014-09-11 15:34:32,315 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000108: Foreign keys: []
+2014-09-11 15:34:32,315 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000126: Indexes: [primary]
+2014-09-11 15:34:32,326 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000261: Table found: fj25.Conta
+2014-09-11 15:34:32,326 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000037: Columns: [gerente_id, numero, banco, id, agencia, titular, versao]
+2014-09-11 15:34:32,326 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000108: Foreign keys: [fk3e4474ff79b7e5d]
+2014-09-11 15:34:32,327 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000126: Indexes: [uk_f9f6fl7r4xm8o7erfsnwgsbf1, fk3e4474ff79b7e5d, agencia, primary]
+2014-09-11 15:34:32,367 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000261: Table found: fj25.Conta_AUD
+2014-09-11 15:34:32,368 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000037: Columns: [rev, numero, numero_modified, revtype, banco, titular_modified, id, banco_modified, agencia, titular, agencia_modified]
+2014-09-11 15:34:32,368 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000108: Foreign keys: [fk5eee35a06c7776b9]
+2014-09-11 15:34:32,368 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000126: Indexes: [fk5eee35a06c7776b9, primary]
+2014-09-11 15:34:32,377 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000261: Table found: fj25.CustomRevInfo
+2014-09-11 15:34:32,377 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000037: Columns: [id, timestamp, username]
+2014-09-11 15:34:32,377 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000108: Foreign keys: []
+2014-09-11 15:34:32,377 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000126: Indexes: [primary]
+2014-09-11 15:34:32,385 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000261: Table found: fj25.Gerente
+2014-09-11 15:34:32,385 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000037: Columns: [cidade, estado, telefone, nome, id, rua]
+2014-09-11 15:34:32,386 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000108: Foreign keys: []
+2014-09-11 15:34:32,386 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000126: Indexes: [primary]
+2014-09-11 15:34:32,403 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000261: Table found: fj25.Movimentacao
+2014-09-11 15:34:32,404 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000037: Columns: [data, tipomovimentacao, conta_id, valor, id, descricao]
+2014-09-11 15:34:32,404 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000108: Foreign keys: [fk257eb923c547677d]
+2014-09-11 15:34:32,404 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000126: Indexes: [fk257eb923c547677d, primary]
+2014-09-11 15:34:32,412 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000261: Table found: fj25.Movimentacao_Categoria
+2014-09-11 15:34:32,412 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000037: Columns: [categorias_id, movimentacao_id]
+2014-09-11 15:34:32,413 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000108: Foreign keys: [fkfc77e4f78545bff0, fkfc77e4f7e266f157]
+2014-09-11 15:34:32,413 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000126: Indexes: [fkfc77e4f78545bff0, fkfc77e4f7e266f157]
+2014-09-11 15:34:32,422 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000261: Table found: fj25.hibernate_sequence
+2014-09-11 15:34:32,422 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000037: Columns: [next_val]
+2014-09-11 15:34:32,422 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000108: Foreign keys: []
+2014-09-11 15:34:32,422 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (ServerService Thread Pool -- 56) HHH000126: Indexes: []
+2014-09-11 15:34:32,423 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 56) HHH000232: Schema update complete
+2014-09-11 15:34:32,497 WARN  [org.hibernate.search.impl.ConfigContext] (ServerService Thread Pool -- 56) HSEARCH000075: Configuration setting hibernate.search.lucene_version was not specified, using LUCENE_CURRENT.
+2014-09-11 15:34:34,183 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (MSC service thread 1-1) Initializing Mojarra 2.2.6-jbossorg-4 20140501-1134 for context '/fj25-web-wildfly'
+2014-09-11 15:34:34,952 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017534: Registered web context: /fj25-web-wildfly
+2014-09-11 15:34:35,000 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 30) JBAS018559: Deployed "fj25-web-wildfly.war" (runtime-name : "fj25-web-wildfly.war")
+2014-09-11 15:34:35,054 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+2014-09-11 15:34:35,055 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+2014-09-11 15:34:35,055 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.1.0.Final "Kenny" started in 18355ms - Started 417 of 519 services (174 services are lazy, passive or on-demand)
+2014-09-11 22:16:24,868 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 66) MODCLUSTER000002: Initiating mod_cluster shutdown
+2014-09-11 22:16:24,874 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017535: Unregistered web context: /fj25-web-wildfly
+2014-09-11 22:16:24,881 WARN  [org.jboss.modcluster] (ServerService Thread Pool -- 66) MODCLUSTER000033: Failed to interrupt socket reception.: java.io.IOException: Can't assign requested address
+	at java.net.PlainDatagramSocketImpl.send(Native Method) [rt.jar:1.8.0_05]
+	at java.net.DatagramSocket.send(DatagramSocket.java:671) [rt.jar:1.8.0_05]
+	at org.jboss.modcluster.advertise.impl.AdvertiseListenerImpl.interruptDatagramReader(AdvertiseListenerImpl.java:209)
+	at org.jboss.modcluster.advertise.impl.AdvertiseListenerImpl.stop(AdvertiseListenerImpl.java:228)
+	at org.jboss.modcluster.advertise.impl.AdvertiseListenerImpl.destroy(AdvertiseListenerImpl.java:244)
+	at org.jboss.modcluster.ModClusterService.shutdown(ModClusterService.java:220)
+	at org.wildfly.extension.mod_cluster.ContainerEventHandlerService.stop(ContainerEventHandlerService.java:115)
+	at org.jboss.as.clustering.msc.AsynchronousService$2.run(AsynchronousService.java:114) [wildfly-clustering-common-8.1.0.Final.jar:8.1.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_05]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_05]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_05]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122) [jboss-threads-2.1.1.Final.jar:2.1.1.Final]
+
+2014-09-11 22:16:24,899 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017532: Host default-host stopping
+2014-09-11 22:16:24,903 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+2014-09-11 22:16:24,903 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 65) JBAS011410: Stopping Persistence Unit (phase 2 of 2) Service 'fj25-web-wildfly.war#financas'
+2014-09-11 22:16:24,917 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) JBAS010418: Stopped Driver service with driver-name = h2
+2014-09-11 22:16:24,925 INFO  [org.infinispan.eviction.PassivationManagerImpl] (ServerService Thread Pool -- 72) ISPN000029: Passivating all entries to disk
+2014-09-11 22:16:24,927 INFO  [org.infinispan.eviction.PassivationManagerImpl] (ServerService Thread Pool -- 72) ISPN000030: Passivated 0 entries in 1 milliseconds
+2014-09-11 22:16:24,932 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 65) JBAS010282: Stopped fj25-web-wildfly.war#financas.br.com.caelum.financas.modelo.Conta cache from hibernate container
+2014-09-11 22:16:24,942 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 72) JBAS010282: Stopped dist cache from ejb container
+2014-09-11 22:16:24,943 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 65) JBAS010282: Stopped fj25-web-wildfly.war#financas.br.com.caelum.financas.modelo.Movimentacao cache from hibernate container
+2014-09-11 22:16:24,952 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000080: Disconnecting JGroups Channel
+2014-09-11 22:16:24,953 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 65) JBAS010282: Stopped fj25-web-wildfly.war#financas.br.com.caelum.financas.modelo.Conta.movimentacoes cache from hibernate container
+2014-09-11 22:16:24,955 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 65) JBAS010282: Stopped fj25-web-wildfly.war#financas.org.hibernate.cache.internal.StandardQueryCache cache from hibernate container
+2014-09-11 22:16:24,959 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 65) JBAS010282: Stopped fj25-web-wildfly.war#financas.org.hibernate.cache.spi.UpdateTimestampsCache cache from hibernate container
+2014-09-11 22:16:24,965 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000082: Stopping the RpcDispatcher
+2014-09-11 22:16:25,011 INFO  [org.infinispan.jmx.CacheJmxRegistration] (ServerService Thread Pool -- 65) ISPN000031: MBeans were successfully registered to the platform MBean server.
+2014-09-11 22:16:25,012 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 65) JBAS010281: Started local-query cache from hibernate container
+2014-09-11 22:16:25,021 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) JBAS016009: Stopping weld service for deployment fj25-web-wildfly.war
+2014-09-11 22:16:25,044 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017521: Undertow HTTP listener default suspending
+2014-09-11 22:16:25,044 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017521: Undertow AJP listener ajp suspending
+2014-09-11 22:16:25,046 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 65) JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'fj25-web-wildfly.war#financas'
+2014-09-11 22:16:25,046 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017520: Undertow HTTP listener default stopped, was bound to localhost/127.0.0.1:8080
+2014-09-11 22:16:25,047 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) JBAS010409: Unbound data source [java:/fj25DS]
+2014-09-11 22:16:25,048 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017520: Undertow AJP listener ajp stopped, was bound to localhost/127.0.0.1:8009
+2014-09-11 22:16:25,048 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017506: Undertow 1.0.15.Final stopping
+2014-09-11 22:16:25,055 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-1) JBAS010282: Stopped local-query cache from hibernate container
+2014-09-11 22:16:25,061 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-1) JBAS010282: Stopped pending-puts cache from hibernate container
+2014-09-11 22:16:25,062 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000080: Disconnecting JGroups Channel
+2014-09-11 22:16:25,068 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015877: Stopped deployment fj25-web-wildfly.war (runtime-name: fj25-web-wildfly.war) in 261ms
+2014-09-11 22:16:25,073 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000082: Stopping the RpcDispatcher
+2014-09-11 22:16:25,073 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) JBAS010418: Stopped Driver service with driver-name = com.mysql
+2014-09-11 22:16:25,084 INFO  [org.jboss.as] (MSC service thread 1-8) JBAS015950: WildFly 8.1.0.Final "Kenny" stopped in 238ms
