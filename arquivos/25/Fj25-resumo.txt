@@ -1,0 +1,31 @@
+Fj25
+
+- Wildfly
+	-> Versão nova(8 >) do JBoss
+	-> Servidor de aplicação que implementa as especificações do JAVA EE
+
+- Persistencecontext
+	-> Quando estamos em um servidor de aplicação que implemente a as especificações do JAVA EE, podemos usar o JPA(Especificação do JAVA Persistence API) de forma simples, pois ja temos o DataSource configurado por default. Precisamos somente criar uma classe(DAO) que receba através de injeção o EntityManager, para isso basta usar a anotação @PersistenceContext
+
+
+- EJB - Enterprise Java Bean
+	-> Especificação do JAVA EE
+	-> Tipo de objeto que ganha algumas funcionalidades dependendo do seu tipo
+
+	Existem 3 tipos de EJBs:
+	-> Session Beans (mais comum)
+		- É um objeto administrado pelo EJB Container 
+		- Funcionalidades e serviços ganhos:  Transação, Injeção de recursos, etc
+		- Existem 3 tipos de Session Beans:
+			- @Stateless: Um SessionBean compartilhado entre clientes
+			- @Singleton: Um SessionBean onde só existe uma instância por Container
+			- @Stateful: Um SessionBean que único por cliente
+	-> Entity Beans
+		- São entidades, classes que serão persistidas no banco de daos
+	-> Message Driven Beans
+		- Relacionadas com a especificação do JMS, receptores de mensagens (FJ-36)
+
+	Algumas outras funcionalidades que um EJB recebe
+	-> Transção com JTA(JAVA Transaction API), Interceptadores, Web Services, Acesso sincronizado(Thread safety), Pool de Objetos, Tratamento de exceções, Integração com JPA(JAVA Persistence API), callbacks de ciclo de vida(postConstruct, preDestroy), etc.
+
+- 
