@@ -19,7 +19,7 @@ Fj25
 		- Existem 3 tipos de Session Beans:
 			- @Stateless: Um SessionBean compartilhado entre clientes
 			- @Singleton: Um SessionBean onde só existe uma instância por Container
-			- @Stateful: Um SessionBean que único por cliente
+			- @Stateful: Um SessionBean que é único por cliente
 	-> Entity Beans
 		- São entidades, classes que serão persistidas no banco de daos
 	-> Message Driven Beans
@@ -28,4 +28,42 @@ Fj25
 	Algumas outras funcionalidades que um EJB recebe
 	-> Transção com JTA(JAVA Transaction API), Interceptadores, Web Services, Acesso sincronizado(Thread safety), Pool de Objetos, Tratamento de exceções, Integração com JPA(JAVA Persistence API), callbacks de ciclo de vida(postConstruct, preDestroy), etc.
 
-- 
+- TimeService
+	O EJB já oferece um TimeService que serve para agendamento de tarefas
+	para injeta-lo basta anotar o atributo com @Resource
+	Ex: classe Agendador e AgendadorFormBean
+
+- Injeção
+
+
+- Exceptions Transactions
+	No EJB por padrão as checked Exceptions são RunTimeExceptions e geram rollback, já as ApplicationExceptions, que são checked, não geram rollback por default
+	Para trocar esse comportamento podemos usar a annotation @ApplicationException(rollback = true) que ira tratar uma ApplicatonException com a politica de rollback
+
+- Transaction
+	O EJB Container ja gerencia a transação por padrão(CMT - Container Managed Transaction), podemos alterar esse comportamento(não recomendado) e assim trabalhar com a transação(BMT - Bean Managed Transaction), para trbalhar manualmente com a transação, basta anotar a classe (DAO) com @TransactionManagement(TransactionManagementType.BEAN) e os metodos que quiserem acessar a transação recebem por injeção(@Resource) o objeto UserTransaction e ganha acesso aos metodos de begin, commit, rollback, etc. 
+	-> CMT - Container Managed Transaction
+		Neste modo, o container do EJB segue uma politica de tratamento de transação padrão, a REQUIRED, ha outros que são:
+		- MANDATORY: Precisa que uma transação ja esteja aberta antes da chamada do metodo, se não joga TransactionRequiredException
+		- NOT_SUPPORTED: Não transaciona, ja tiver transação aberta, pausa, executa, depois volta com a transação que estava aberta
+		- SUPPORTS: Executa com ou sem
+		- NEVER: Só executa sem transação, se tiver uma aberta, lança exception
+		- REQUIRED: Abre uma nova se não existir. (É o padrão)
+		- REQUIRES_NEW: Abre uma nova a cada chamada, se ja tiver uma aberta, pausa temporariamente e abre uma nova.
+	Para mudar esse compartamento, usar no metodo/classe a annotation @TransactionAttribute(TransactionAttributeType.REQUIRES_NEW)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

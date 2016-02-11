@@ -3,31 +3,32 @@ package br.com.caelum.financas.dao;
 import java.util.List;
 
 import javax.ejb.Stateless;
+import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.transaction.UserTransaction;
 
 import br.com.caelum.financas.modelo.Conta;
 
 @Stateless
 public class ContaDao {
 	@PersistenceContext
-	EntityManager manager;
+	private EntityManager manager;
 
 	public void adiciona(Conta conta) {
 		this.manager.persist(conta);
 	}
-	
-	public void altera(Conta conta){
+
+	public void altera(Conta conta) {
 		this.manager.merge(conta);
 	}
-	
+
 	public Conta busca(Integer id) {
 		return this.manager.find(Conta.class, id);
 	}
 
 	public List<Conta> lista() {
-		return this.manager.createQuery("select c from Conta c", Conta.class)
-				.getResultList();
+		return this.manager.createQuery("select c from Conta c", Conta.class).getResultList();
 	}
 
 	public void remove(Conta conta) {
@@ -36,7 +37,3 @@ public class ContaDao {
 	}
 
 }
-
-
-
-
