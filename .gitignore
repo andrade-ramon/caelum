@@ -1,3 +1,6 @@
 .DS_Store
 *DS_Store
 ./arquivos/25/wildfly-8.1.0.Final/*
+arquivos/
+arquivos/*
+/arquivos/
